@@ -305,7 +305,7 @@ ol {
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: #100028;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
 }
@@ -501,12 +501,15 @@ ol {
   text-transform: uppercase;
   margin-bottom: 18px;
   position: relative;
+  width: max-content;
   top: 100px;
   opacity: 0;
   -webkit-transition: all, 0.3s;
   -o-transition: all, 0.3s;
   transition: all, 0.3s;
+  padding-left: 25px;
 }
+
 .hero__text h2 {
   color: #ffffff;
   font-size: 60px;
@@ -515,12 +518,43 @@ ol {
   text-transform: uppercase;
   margin-bottom: 38px;
   position: relative;
-  top: 100px;
+  width: max-content;
+  top: 100px; 
   opacity: 0;
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
+  padding-left: 25px;
 }
+
+.hero__text h2::before, .hero__text span::before,
+.hero__text h2::after, .hero__text span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hero__text h2::before {
+  padding-left: 20px;
+  background: #160539;
+  animation: typewriter 2s ease forwards;
+}
+
+.hero__text span::before {
+  padding-left: 20px;
+  background: white;
+  animation: typewriter 2s ease forwards;
+}
+
+@keyframes typewriter {
+  to {
+    right: 100%;
+  }
+}
+
 .hero__text .primary-btn {
   position: relative;
   top: 100px;
@@ -1381,7 +1415,7 @@ ol {
 }
 .blog__item:hover {
   border: 1px solid transparent !important;
-  background: url(../img/blog/blog-2.jpg) no-repeat;
+  background: var(--path) no-repeat;
   background-size: cover;
 }
 .blog__item:hover ul li {
