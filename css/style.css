@@ -302,11 +302,12 @@ ol {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
+  /* background: url('img/breadcrumb-bg-1.jpg') */
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
