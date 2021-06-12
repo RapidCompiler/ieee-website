@@ -1487,7 +1487,7 @@ ol {
   Blog Details Hero
 -----------------------*/
 .blog-hero {
-  padding: 300px 0 230px;
+  padding: 200px 230px 350px 230px;
 }
 
 .blog__hero__text {
@@ -1523,6 +1523,9 @@ ol {
 }
 .blog__hero__text ul li span {
   text-transform: uppercase;
+}
+.blog__hero__text ul li span a {
+  color: #ffffff;
 }
 
 /*---------------------

@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="description" content="IEEE-PSG">
+    <meta name="keywords" content="IEEE, PSG, Students Chapter, 12951">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Videograph | Template</title>
+    <title>IEEE SC 12951 | Blog</title>
+
+     <link href="img/logo/IEEE-PSG.png" rel="icon">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -29,24 +31,23 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
+    <div style="background: transparent; height: 116px; padding: 0px 0px;"></div>
     <!-- Header Section Begin -->
-    <header class="header">
+    <div class="header set-bg" data-setbg="img/breadcrumb-bg-1.jpg">
         <div class="container">
             <div class="row">
-                
-                <div class="col-lg-12">
+                <div class="col-lg-12 set-bg">
                     <div class="header__nav__option">
                         
                         <a href="https://www.ieee.org/" target="_blank"><img src="img/logo/IEEE.png" alt="IEEE" height="40" width="120"></a>
                         <a href="#"><img src="img/logo/IEEE-PSG.png" alt="IEEE-PSG" height="45" width="45"></a>
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./index.html">Home</a></li>
                                 <li><a href="./about.html">About</a></li>
                                 <li><a href="./services.html">Events</a></li>
                                 <li><a href="./portfolio.html">Gallery</a></li>
-                                <li><a href="./blog.html">Blog</a></li>
+                                <li class="active"><a href="./blog.html">Blog</a></li>
                                 <li><a href="./team.html">Team</a></li>
                                 <li><a href="./contact.html">Contact us</a></li>
                             </ul>
@@ -62,7 +63,7 @@
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
-    </header>
+    </div>
     <!-- Header End -->
 
     <!-- Blog Details Hero Begin -->
@@ -73,7 +74,7 @@
                     <div class="blog__hero__text">
                         <h2 style="color: #100028;">LEGO  ROBOT  TO  FIGHT  CORONAVIRUS</h2>
                         <ul>
-                            <li style="color: #100028;">by <span>DINESHKANNA B R</span></li>
+                            <li style="color: #100028;">by <span><a href="#author" style="color: #100028;">DINESHKANNA B R</a></span></li>
                             <li style="color: #100028;">Jan 03, 2020</li>
                         </ul>
                     </div>
@@ -109,7 +110,7 @@
                         </div>
 
                         </div>
-                        <div class="blog__details__quote blog__details__text">
+                        <div id="author" class="blog__details__quote blog__details__text">
                             <h4>About the author</h4>
                             <h5 style="color: #00bfe7">Dineshkanna BR</h5>
                             <p>I'm Dineshkanna, a second year student studying ECE at PSG tech. I like leading teams under a variety of circumstances and love to organise and figure out solutions for problems in general.</p>
@@ -158,64 +159,49 @@
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="footer__option">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="footer__option__item">
                             <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                            <p>The Students’ Chapter of IEEE at PSG College of Technology was initiated in 1974. It was started to increase 
+                                the participation of students in research and encourage new ideas in the
+                                 respective fields.</p>
+                            <a href="./about.html" class="read__more">Read more <span class="arrow_right"></span></a>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
                             <h5>Who we are</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
+                                <li><a href="./team.html">Team</a></li>
+                                <li><a href="./services.html">Gallery</a></li>
+                                <li><a href="./contact.html">Contact us</a></li>
+                                <li><a href="./blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
-                            <h5>Our work</h5>
+                            <h5>Our Events</h5>
                             <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
+                                <li><a href="./services.html#SRiSHTi">SRiSHTi</a></li>
+                                <li><a href="./services.html#Atom">Atom</a></li>
+                                <li><a href="./services.html#Inaugration">Inauguration</a></li>
+                                <li><a href="./services.html#Valedictory">Valedictory</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-12">
                         <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
+                            <a href="https://www.ieee.org/" target="_blank"><img src="img/logo/IEEE.png" alt="IEEE" width="120" height="40"></a>
+                            <a href="./index.html"><img src="img/logo/IEEE-PSG.png" alt="IEEE-PSG" width="40" height="40"></a><br><br>
+                            <a href="https://www.psgtech.edu/" target="_blank"><h6>PSG College Of Technology</h6></a>
+                            <a href="https://goo.gl/maps/x1EitRRC96BLJnMJ8" target="_blank"><p>Address: Avinashi Rd, Peelamedu, Coimbatore, Tamil Nadu 641004</p></a>
+                            <div class="footer__top__social">
+                                <a href="https://www.instagram.com/ieee_sc_12951/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                                <a href="mailto:ieee.studentschapter.12951@gmail.com" taget="_blank"><i class="fa fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -228,8 +214,7 @@
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            All rights reserved | This Website was developed by IEEE SC 12951 with <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
