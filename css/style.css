@@ -305,7 +305,6 @@ ol {
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
 }
@@ -489,8 +488,8 @@ ol {
 }
 
 .hero__item {
-  height: 684px;
-  padding-top: 255px;
+  height: 567px;
+  padding-top: 150px;
 }
 
 .hero__text span {
@@ -989,7 +988,7 @@ ol {
   Breadcrumb
 -----------------------*/
 .breadcrumb-option {
-  padding-top: 180px;
+  padding-top: 100px;
 }
 
 .breadcrumb-option-side {
