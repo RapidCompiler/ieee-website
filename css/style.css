@@ -310,7 +310,6 @@ ol {
   left: 0;
   top: 0;
   width: 100%;
-  background: #100028;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
 }
@@ -494,8 +493,8 @@ ol {
 }
 
 .hero__item {
-  height: 684px;
-  padding-top: 255px;
+  height: 567px;
+  padding-top: 150px;
 }
 
 .hero__text span {
@@ -785,21 +784,19 @@ ol {
 .team .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
-  font-size: 18px;
+  font-size: 19px;
   color: #ffffff;
 }
 
 .team .member span {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   color: #00bfe7;
 }
 
 .team .member p {
-  padding-top: 10px;
   font-size: 14px;
-  font-style: italic;
-  color: #ffffff;
+  color: #adadad;
 }
 
 .team .member .social {
@@ -1038,7 +1035,7 @@ ol {
   Breadcrumb
 -----------------------*/
 .breadcrumb-option {
-  padding-top: 180px;
+  padding-top: 100px;
 }
 
 .breadcrumb-option-side {
