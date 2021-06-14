@@ -452,6 +452,10 @@ ol {
   top: 0;
   opacity: 1;
 }
+.hero__slider.owl-carousel .owl-item.active .hero__text h3 {
+  top: 0;
+  opacity: 1;
+}
 .hero__slider.owl-carousel .owl-item.active .hero__text .primary-btn {
   top: 0;
   opacity: 1;
@@ -534,9 +538,29 @@ ol {
   font-family: "Courier New", monospace;
 }
 
+.hero__text h3 {
+  color: #ffffff;
+  background: #160539;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 38px;
+  position: relative;
+  width: max-content;
+  top: 100px;
+  opacity: 0;
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+  font-family: "Courier New", monospace;
+}
+
 .hero__text h2::before,
+.hero__text h3::before,
 .hero__text span::before,
 .hero__text h2::after,
+.hero__text h3::after,
 .hero__text span::after {
   content: "";
   position: absolute;
@@ -549,7 +573,13 @@ ol {
 .hero__text h2::before {
   padding-right: 20px;
   background: #160539;
-  animation: typewriter 4s steps(28) 1s forwards;
+  animation: typewriter 2s steps(12) 1s forwards;
+}
+
+.hero__text h3::before {
+  padding-right: 20px;
+  background: #160539;
+  animation: typewriter 2s steps(15) 3s forwards;
 }
 
 .hero__text span::before {
@@ -953,6 +983,7 @@ ol {
 .footer__option__item p {
   font-weight: 300;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .footer__option__item .read__more {
   font-size: 16px;
@@ -1087,11 +1118,12 @@ ol {
   margin-bottom: 20px;
 }
 .about__pic__item.about__pic__item--large {
-  height: 490px;
+  height: 340px;
 }
 
 .about__text {
   padding-left: 30px;
+  text-align: justify;
 }
 .about__text .services__item .services__item__icon:after {
   border-color: #281a3e;
@@ -1185,6 +1217,7 @@ ol {
 
 .services__title p {
   margin-bottom: 45px;
+  text-align: justify;
 }
 
 .services__item {
@@ -1204,6 +1237,7 @@ ol {
 }
 .services__item p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .services__item__icon {
@@ -1469,6 +1503,7 @@ ol {
   font-weight: 300;
   line-height: 29px;
   margin-bottom: 22px;
+  text-align: justify;
 }
 .blog__item a {
   font-size: 16px;
@@ -1543,6 +1578,7 @@ ol {
   line-height: 29px;
   font-weight: 300;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .blog__details__text p:last-child {
   margin-bottom: 0;
@@ -1570,6 +1606,7 @@ ol {
   line-height: 35px;
   font-style: italic;
   margin-bottom: 10px;
+  text-align: justify;
 }
 .blog__details__quote h5 {
   font-size: 23px;
@@ -2165,7 +2202,17 @@ ol {
     display: none;
   }
 
+  .hero__text span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .hero__text h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero__text h3 {
     font-size: 40px;
     line-height: 40px;
   }
@@ -2226,7 +2273,17 @@ ol {
 }
 /* Small Device = 320px */
 @media only screen and (max-width: 479px) {
+  .hero__text span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
   .hero__text h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .hero__text h3 {
     font-size: 30px;
     line-height: 40px;
   }
