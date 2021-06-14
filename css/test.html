@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h2 {
+            /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
+            /* position: relative; */
+            /* font-family: "Source Code Pro", monospace; */
+            position: relative;
+            width: max-content;
+        }
+
+
+
+        h2::before,
+        h2::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        
+
+        h2::before {
+            background: teal;
+            animation: typewriter 1s ease forwards;
+        }
+
+        @keyframes typewriter {
+            to {
+                right: 100%
+            }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hi there</h2>
+</body>
+</html>
