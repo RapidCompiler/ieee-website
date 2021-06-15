@@ -498,8 +498,8 @@ ol {
 }
 
 .hero__item {
-  height: 567px;
-  padding-top: 150px;
+  height: 507px;
+  padding-top: 120px;
 }
 
 .hero__text span {
@@ -2215,6 +2215,10 @@ ol {
   .hero__text h3 {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .hero__text .primary-btn {
+    background-color: #160539;
   }
 
   .grid-sizer {
