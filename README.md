@@ -1,5 +1,5 @@
 PSG College of Technology IEEE SC - 12951 Website
 
-Release branch Netlify Auto Deployment: [psg-ieee-website.netlify.app](https://psg-ieee-website.netlify.app/)
+`release` branch Netlify Auto Deployment: <a href="https://psg-ieee-website.netlify.app/" target="_blank">psg-ieee-website.netlify.app</a>
 
 Made with 💓 by IEEE SC - 12951
