@@ -570,22 +570,37 @@ ol {
   left: 0;
 }
 
-.hero__text h2::before {
-  padding-right: 20px;
-  background: #160539;
-  animation: typewriter 2s steps(12) 1s forwards;
+:root {
+  --heroTypeWriterSpeed: 2s;
+  --spanTypeWriterSpeed: 3s;
+  --delayTypeWriter: 1s;
+  --heroCharacters: 15;
+  --spanCharacters: 25;
+  --insertionPointBlinkSpeed: 750ms;
 }
 
-.hero__text h3::before {
-  padding-right: 20px;
+.hero__text h2::before {
   background: #160539;
-  animation: typewriter 2s steps(15) 3s forwards;
+  animation: typewriter var(--heroTypeWriterSpeed) steps(var(--heroCharacters)) var(--delayTypeWriter) forwards;
+}
+
+.hero__text h2::after {
+  width: 10px;
+  background: white;
+  animation: typewriter var(--heroTypeWriterSpeed) steps(var(--heroCharacters)) var(--delayTypeWriter) forwards,
+  blink var(--insertionPointBlinkSpeed) steps(var(--heroCharacters)) infinite;
 }
 
 .hero__text span::before {
-  padding-left: 20px;
   background: white;
-  animation: typewriter 2s steps(25) 1s forwards;
+  animation: typewriter var(--spanTypeWriterSpeed) steps(var(--spanCharacters)) var(--delayTypeWriter) forwards;
+}
+
+.hero__text span::after {
+  width: 10px;
+  background: black;
+  animation: typewriter var(--spanTypeWriterSpeed) steps(var(--spanCharacters)) var(--delayTypeWriter) forwards,
+  blink var(--insertionPointBlinkSpeed) steps(var(--spanCharacters)) infinite;
 }
 
 @keyframes typewriter {
