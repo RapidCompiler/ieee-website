@@ -1,18 +1,3 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "cyansus94@gmail.com";
-    $from = $_POST['email'];
-    $name = $_POST['name']
-    $subject = "Form submission";
-    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $headers = "From:" . $from;
-    mail($to,$subject,$message,$headers);
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    header('Location': 'index.html');
-    exit;
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -156,7 +141,7 @@ if(isset($_POST['submit'])){
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
                         <h3>Get in touch</h3>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="" method="post">
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/f/xoqywlnd" method="post">
                             <div class="control-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
                                 <p class="help-block"></p>
@@ -170,7 +155,7 @@ if(isset($_POST['submit'])){
                                 <p class="help-block"></p>
                             </div>
                             <div>
-                                <button class="site-btn" type="submit" id="sendMessageButton">Send Message</button>
+                                <button class="site-btn" name="submit" type="submit" id="sendMessageButton">Send Message</button>
                             </div>
                         </form>
                         
