@@ -572,7 +572,7 @@ ol {
 
 :root {
   --heroTypeWriterSpeed: 2s;
-  --spanTypeWriterSpeed: 3s;
+  --spanTypeWriterSpeed: 2s;
   --delayTypeWriter: 1s;
   --heroCharacters: 15;
   --spanCharacters: 25;
