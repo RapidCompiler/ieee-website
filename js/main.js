@@ -204,6 +204,9 @@
         });
     });
 
+    $(function() {
+        $('#insertFooter').load('../footer.html')
+    });
 
 
 })(jQuery);
