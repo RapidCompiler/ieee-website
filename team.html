@@ -31,7 +31,7 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    <div style="background: transparent; height: 116px; padding: 0px 0px;"></div>
+    <div class="empty" style="background: transparent; height: 116px; padding: 0px 0px;"></div>
     <!-- Header Section Begin -->
     <header class="header set-bg" data-setbg="img/breadcrumb-bg-1.jpg">
         <div class="container">
@@ -55,9 +55,9 @@
                         <div class="header__nav__social">
                             <a href="https://www.instagram.com/ieee_sc_12951/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
                             <a href="mailto:ieee.studentschapter.12951@gmail.com" taget="_blank"><i class="fa fa-envelope"></i></a>
-                            <a href="#"><img src="#" alt="" width="10"></a>
+                            <a href="https://www.linkedin.com/company/ieee-students-chapter-12951/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </div>
-                        <a href="https://www.psgtech.edu/" target="_blank"><img src="img/logo/psg.png" alt="PSG" height="60" width="45"></a>
+                        <a class="header__nav__psg" href="https://www.psgtech.edu/" target="_blank"><img src="img/logo/psg.png" alt="PSG" height="60" width="45"></a>
                     </div>
                 </div>
             </div>
@@ -83,49 +83,15 @@
         </div>
     </div>
     <!-- Breadcrumb End -->
-
+    
     <!-- Team Section Begin-->
     <section class="team spad">
         <div class="container">
             <div class="row">
-                <div id="Department" class="col-lg-12 section-title">
+                <div class="col-lg-12 section-title">
                     <span>Our</span>
                     <h2>Departments</h2>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <a href="https://www.psgtech.edu/hme.php?var=EEE" target="_blank">
-                            <div class="services__item__icon">
-                                <img src="img/logo/eee.png" alt="">
-                            </div>
-                            <h4>EEE</h4>
-                        </a>
-                        <p>The Department of Electrical and Electronics Engineering (EEE) has been playing a vital role in producing scientists and technologists of highest caliber ever since it was established in the year 1951. The department along with its highly qualified faculty members started functioning right from inception and engages actively in teaching and research in all current areas of Electrical and Electronics Engineering</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <a href="https://www.psgtech.edu/hme.php?var=ECE" target="_blank">
-                            <div class="services__item__icon">
-                                <img src="img/logo/ece.png" alt="">
-                            </div>
-                            <h4>ECE</h4>
-                        </a>
-                        <p>The Department of Electronics and Communication Engineering came into existence in the year 1968.The department offers B.E Programme in Electronics and Communication Engineering and PG Programmes include M.E Communication Systems, M.E VLSI Design, M.E Wireless Communications and M.Tech Nanoscience and Technology offering high dass technical and innovative experience to the students.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services__item">
-                        <a href="https://www.psgtech.edu/hme.php?var=ICE" target="_blank">
-                            <div class="services__item__icon">
-                                <img src="img/logo/i&ce.png" alt="">
-                            </div>
-                            <h4>ICE</h4>
-                        </a>
-                        <p>The Department of Instrumentation and Control Systems Engineering was established in the year 2007. The department caters to the ever challenging needs of technical excellence in all areas of Instrumentation and Control Engineering With a prefect blend of industrial exposure, coupled with good technical base, our students make their presence felt in various technological domains in all the top-level industries.</p>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6"></div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
                         <a href="https://www.psgtech.edu/hme.php?var=BME" target="_blank">
@@ -139,17 +105,51 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="services__item">
+                        <a href="https://www.psgtech.edu/hme.php?var=ECE" target="_blank">
+                            <div class="services__item__icon">
+                                <img src="img/logo/ece.png" alt="">
+                            </div>
+                            <h4>ECE</h4>
+                        </a>
+                        <p>The Department of Electronics and Communication Engineering offers B.E Programme in Electronics and Communication Engineering and PG Programmes include M.E Communication Systems, M.E VLSI Design, M.E Wireless Communications and M.Tech Nanoscience and Technology offering high class technical knowledge to the students.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <a href="https://www.psgtech.edu/hme.php?var=EEE" target="_blank">
+                            <div class="services__item__icon">
+                                <img src="img/logo/eee.png" alt="">
+                            </div>
+                            <h4>EEE</h4>
+                        </a>
+                        <p>The Department of Electrical and Electronics Engineering (EEE) has been playing a vital role in technologists of highest caliber ever since it was established in the year 1951. The department along with its highly qualified faculty members actively engages in teaching and research in all current areas of Electrical and Electronics Engineering. </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6"></div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services__item">
+                        <a href="https://www.psgtech.edu/hme.php?var=ICE" target="_blank">
+                            <div class="services__item__icon">
+                                <img src="img/logo/i&ce.png" alt="">
+                            </div>
+                            <h4>ICE</h4>
+                        </a>
+                        <p>The Department of Instrumentation and Control Systems Engineering was established in the year 2007. The department caters to the ever challenging needs of technical excellence in all areas of Instrumentation and Control Engineering With a prefect blend of industrial exposure, coupled with good technical base, our students make their presence felt in various technological domains in all the top-level industries.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="services__item">
                         <a href="https://www.psgtech.edu/hme.php?var=RAE" target="_blank">
                             <div class="services__item__icon">
                                 <img src="img/logo/rae.png" alt="">
                             </div>
                             <h4>RAE</h4>
                         </a>
-                        <p>The department of Robotics and Automation Engineering was established to meet the growing demand for trained engineers in the field of Industrial Automation Automation Engineering is a cross-sectional discipline that requires sound, proportional knowledge in hardware as well as software development and their applications.</p>
+                        <p>The department of Robotics and Automation Engineering was established to meet the growing demand for trained engineers in the field of Industrial Automation. Automation Engineering is a cross-sectional discipline that requires sound, proportional knowledge in hardware as well as software development and their applications. The department has been striving to promote the knowledge of Automation among student fraternity.</p>
                     </div>
                 </div>
                 <div class="col-lg-12"><br><br></div>
-                <div id="Coremembers" class="col-lg-12 section-title">
+                <div class="col-lg-12 section-title">
                     <span>Our</span>
                     <h2>Core Members</h2>
                 </div>
@@ -737,6 +737,7 @@
                             <div class="footer__top__social">
                                 <a href="https://www.instagram.com/ieee_sc_12951/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
                                 <a href="mailto:ieee.studentschapter.12951@gmail.com" taget="_blank"><i class="fa fa-envelope"></i></a>
+                                <a href="https://www.linkedin.com/company/ieee-students-chapter-12951/" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
