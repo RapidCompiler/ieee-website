@@ -501,6 +501,9 @@ ol {
 .hero__item {
   height: 507px;
   padding-top: 120px;
+  background-image: url("../img/hero/bridge-f.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__text span {
@@ -2063,13 +2066,13 @@ ol {
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #00bfe7;
   }
 
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #00bfe7;
   }
 
   .slicknav_nav {
@@ -2107,6 +2110,12 @@ ol {
 @media only screen and (max-width: 767px) {
   .services__title {
     margin-bottom: 50px;
+  }
+
+  .hero__item {
+    background-image: url("../img/hero/bridge-s.png");
+    background-position: center;
+    background-size: cover;
   }
 
   .blog__details__quote {
@@ -2216,13 +2225,13 @@ ol {
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #00bfe7;
   }
 
   .slicknav_nav a:hover {
     border-radius: 0;
     background: transparent;
-    color: #111111;
+    color: #00bfe7;
   }
 
   .slicknav_nav {
