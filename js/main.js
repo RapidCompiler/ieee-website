@@ -249,11 +249,6 @@
         }
     });
 
-    });
-
-
-    jQuery(function($) { // DOM ready and $ in scope
-
     $(".counter_num_plus").inViewport(function(px) { // Make use of the `px` argument!!!
         // if element entered V.port ( px>0 ) and
         // if prop initNumAnim flag is not yet set
@@ -270,6 +265,13 @@
         });         
         }
     });
+
+    });
+
+
+    jQuery(function($) { // DOM ready and $ in scope
+
+
 
     });
 
