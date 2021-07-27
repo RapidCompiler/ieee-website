@@ -1927,6 +1927,21 @@ ol {
   border-color: #e1e1e1;
 }
 
+/* Marquee */
+marquee {
+  width:100%;
+  direction:left;
+  height:40px;
+  color: #00bfe7;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  /* border: blueviolet;
+  border-style: dashed;
+  border-width: 2px; */
+  background-color: #100028;
+  padding-top: 5px;
+}
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
   .container {
