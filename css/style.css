@@ -509,11 +509,13 @@ ol {
 .hero__text span {
   color: #ffffff;
   display: block;
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 18px;
   position: relative;
+  line-height: 55px;
+  font-weight: 700;
   width: max-content;
   top: 100px;
   opacity: 0;
@@ -522,6 +524,7 @@ ol {
   transition: all, 0.3s;
   font-family: "Courier New", monospace;
   font-weight: bold;
+  /* padding-left: 15px; */
 }
 
 .hero__text h2 {
@@ -540,6 +543,7 @@ ol {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
   font-family: "Courier New", monospace;
+  /* padding-left: 15px; */
 }
 
 .hero__text h3 {
@@ -581,16 +585,24 @@ ol {
   --heroCharacters: 15;
   --spanCharacters: 25;
   --insertionPointBlinkSpeed: 750ms;
+
+ --heroh2SlideDuration: 1s;
+ --heroh2DelayDuration: 0.5s;
+ --heroSpanSlideDuration: 2s;
+ --heroSpanSlideDuration: 0s;
 }
+
+/* DO NOT REMOVE THE TYPEWRITER ANIMATION CODE */
 
 .hero__text h2::before {
   background: #160539;
   animation: typewriter var(--heroTypeWriterSpeed) steps(var(--heroCharacters)) var(--delayTypeWriter) forwards;
+  /* animation: typewriter 1s 0.5s forwards; */
 }
 
 .hero__text h2::after {
   width: 10px;
-  background: white;
+  background: #00bfe7;
   animation: typewriter var(--heroTypeWriterSpeed) steps(var(--heroCharacters)) var(--delayTypeWriter) forwards,
   blink var(--insertionPointBlinkSpeed) steps(var(--heroCharacters)) infinite;
 }
@@ -598,6 +610,7 @@ ol {
 .hero__text span::before {
   background: white;
   animation: typewriter var(--spanTypeWriterSpeed) steps(var(--spanCharacters)) var(--delayTypeWriter) forwards;
+  /* animation: typewriter 2s 0s forwards; */
 }
 
 .hero__text span::after {
@@ -1925,6 +1938,22 @@ ol {
 }
 .contact__form form textarea:focus {
   border-color: #e1e1e1;
+}
+
+/* Marquee */
+marquee {
+  width:100%;
+  direction:left;
+  color: #00bfe7;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  /* border: blueviolet;
+  border-style: dashed;
+  border-width: 2px; */
+  background-color: #100028;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: bold;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
